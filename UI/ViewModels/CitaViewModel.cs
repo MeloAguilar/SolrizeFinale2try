@@ -8,11 +8,9 @@ using System.Threading.Tasks;
 
 namespace UI.ViewModels
 {
-	public class CitaViewModel : INotifyPropertyChanged
+	public class CitaViewModel
 	{
 		private DateTime fechaHoraCita;
-
-		public event PropertyChangedEventHandler PropertyChanged;
 
 		public DateTime FechaHoraCita { get; set; }
 		public string NombreVM

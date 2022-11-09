@@ -6,7 +6,6 @@ public partial class App : Application
 	{
 		InitializeComponent();
 
-		MainPage = new NavigationPage();
-		MainPage.Navigation.PushAsync(new Views.Login());
+		MainPage = new NavigationPage(new Views.Login());
 	}
 }
