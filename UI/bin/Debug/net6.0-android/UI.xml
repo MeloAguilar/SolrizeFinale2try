@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>UI</name>
+    </assembly>
+    <members>
+        <member name="M:UI.Views.Citas.ClientesListView_SelectionChanged(System.Object,Microsoft.Maui.Controls.SelectionChangedEventArgs)">
+            <summary>
+            Método que se encarga de recoger la seleccion de cliente y enviarla a la pagina "Detalles Cita"
+            </summary>
+            <pre>Nada</pre>
+            <post>Nada</post>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,1 @@
+C:\Users\caguilar\Desktop\Interfaces\SolrizeFinale2try\UI\UI.csproj;x64
