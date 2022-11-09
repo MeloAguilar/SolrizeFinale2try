@@ -3,6 +3,7 @@ using Entities;
 using System.Collections.ObjectModel;
 using UI.ViewModels;
 
+
 namespace UI.Views;
 
 public partial class Citas : ContentPage
@@ -25,9 +26,11 @@ public partial class Citas : ContentPage
 		var list = dal.getListadoCompletoPersonas();
 
 		//Convierto la lista en un ObservableCollection de CItaModel
+		int minutos = 0;
 		foreach (var item in list)
 		{
-			cvm.Add(new CitaViewModel(new clsPersona(item.Nombre, item.Apellidos, item.Direccion, item.Telefono), DateTime.Now.AddHours(2)));
+			cvm.Add(new CitaViewModel(new clsPersona(item.Nombre, item.Apellidos, item.Direccion, item.Telefono), DateTime.Now.AddMinutes(minutos)));
+			minutos+=45;
 		}
 
 
@@ -56,15 +59,18 @@ public partial class Citas : ContentPage
 	}
 
 
-
+	/// <summary>
+	/// Sobreescribe el boton back para modificar el navigationStack y reinicia 
+	/// la
+	/// </summary>
+	/// <returns></returns>
 	protected override bool OnBackButtonPressed()
 	{
 
 		//Pongo la pagina de inicio y borro la anterior
-		Navigation.InsertPageBefore(new Login(), Navigation.NavigationStack[1]);
-		Navigation.RemovePage(Navigation.NavigationStack[2]);
-
+		Navigation.InsertPageBefore(new Login(), Navigation.NavigationStack.First());
 		return base.OnBackButtonPressed();
-	}
 
+
+	}
 }

@@ -10,8 +10,9 @@ public partial class DetallesCita : ContentPage
 
 		InitializeComponent();
 
-
+		//Instancio el viewModel y se lo envio a la vista
 		vm = model;
 		Detalles.BindingContext = vm;
+
 	}
 }

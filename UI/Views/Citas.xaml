@@ -62,12 +62,7 @@
                                     HorizontalOptions="Center"
                                     Grid.Row="2"
                                     Text="{Binding NombreCompletoVM}" />
-                                <Label
-                                    
-                                    HorizontalOptions="Center"
-                                    Text="{Binding DireccionVM}"
-                                    FontSize="Body"
-                                    Grid.Row="1"/>
+                                
                                 <Label 
                                     HorizontalOptions="Center"
                                     Grid.Row="3"

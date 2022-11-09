@@ -13,5 +13,28 @@
             <param name="sender"></param>
             <param name="e"></param>
         </member>
+        <member name="M:UI.Views.Citas.OnBackButtonPressed">
+            <summary>
+            Sobreescribe el boton back para modificar el navigationStack y reinicia 
+            la
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:UI.Views.Galeria.TakePhoto">
+            <summary>
+            Método que se encarga de abrir la camara del dispositivo,
+            espera a que el usuario tome la foto y le pregunta si desea introducirla en su almacenamiento,
+            para posteriormente, almacenarla o no, segun diga el usuario
+            
+            
+            </summary>
+        </member>
+        <member name="M:UI.Views.Galeria.Button_Clicked(System.Object,System.EventArgs)">
+            <summary>
+            Método que solo se encargará de llamar al método que abre la camara y toma fotos
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
     </members>
 </doc>

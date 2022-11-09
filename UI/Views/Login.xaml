@@ -2,54 +2,65 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="UI.Views.Login"
-             Title="Login">
+             Title="Login"
+             Background="#3A5F45">
     <VerticalStackLayout
-        VerticalOptions="End"
+        VerticalOptions="Start"
         HorizontalOptions="Fill"
-        Margin="50,0,50,0">
-        <Image Source="logo" />
-        <Border 
-               StrokeShape="RoundRectangle 30,30,30,30"
-            Margin="20"
-            Padding="10,0,0,0"
-               StrokeThickness=".5"
-               
-               Background="Transparent">
+        Spacing="20"
+        Margin="50,30,50,0">
+        
+        
+        <Image 
+            Source="logo"
+            Margin="0,0,0,80"/>
 
+        <Border 
+             StrokeShape="RoundRectangle 40,30,30,30"
+             Padding="10,0,0,0"
+             StrokeThickness="1"
+             BackgroundColor="#C7C8CA">
+            
             <Entry
                 VerticalOptions="Center"
-        x:Name="txtUser"
-        Placeholder="Usuario">
-            </Entry>
-
+                x:Name="txtUser"
+                PlaceholderColor="Black"
+                Placeholder="Usuario"/>
+            
         </Border>
 
+        
+        
         <Border             
-            Margin="20"
             Padding="10,0,0,0"
-               StrokeShape="RoundRectangle 30,30,30,30"
-               StrokeThickness=".5"
-               Background="Transparent"
-               BackgroundColor="Transparent">
+            StrokeShape="RoundRectangle 30,30,30,30"
+            StrokeThickness=".5"
+            BackgroundColor="#C7C8CA"
+            Margin="0,0,0,100">
+            
             <Entry
-        Placeholder="Contraseña"
-        x:Name="txtPass"
-        IsPassword="True">
-
-
-            </Entry>
-
-        </Border  >
+                Placeholder="Contraseña"
+                
+                PlaceholderColor="Black"
+                x:Name="txtPass"
+                IsPassword="True"/>
+            
+        </Border>
+        
+        
         <VerticalStackLayout
-            Margin="0,150,0,150"
+            Margin="0,30,0,0"
+            VerticalOptions="Center"
             HorizontalOptions="Center"
             >
+            
             <Button
-        TextColor="DarkRed"
-        Text="Log in"
-        x:Name="btnInicio"
-        Clicked="btnInicio_Clicked"
-        BackgroundColor="RosyBrown">
+                TextColor="DarkRed"
+                Text="Log in"
+                FontAttributes="Bold"
+                x:Name="btnInicio"
+                Clicked="btnInicio_Clicked"
+                BackgroundColor="RosyBrown">
 
             </Button>
         </VerticalStackLayout>

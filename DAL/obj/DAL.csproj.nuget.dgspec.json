@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\caguilar\\Desktop\\Interfaces\\SolrizeFinale2try\\DAL\\DAL.csproj": {}
+    "A:\\DAM\\DEINT\\SolarizeDEINT\\MeloAguilar\\SolrizeFinale2try\\DAL\\DAL.csproj": {}
   },
   "projects": {
-    "C:\\Users\\caguilar\\Desktop\\Interfaces\\SolrizeFinale2try\\DAL\\DAL.csproj": {
+    "A:\\DAM\\DEINT\\SolarizeDEINT\\MeloAguilar\\SolrizeFinale2try\\DAL\\DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\caguilar\\Desktop\\Interfaces\\SolrizeFinale2try\\DAL\\DAL.csproj",
+        "projectUniqueName": "A:\\DAM\\DEINT\\SolarizeDEINT\\MeloAguilar\\SolrizeFinale2try\\DAL\\DAL.csproj",
         "projectName": "DAL",
-        "projectPath": "C:\\Users\\caguilar\\Desktop\\Interfaces\\SolrizeFinale2try\\DAL\\DAL.csproj",
-        "packagesPath": "C:\\Users\\caguilar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\caguilar\\Desktop\\Interfaces\\SolrizeFinale2try\\DAL\\obj\\",
+        "projectPath": "A:\\DAM\\DEINT\\SolarizeDEINT\\MeloAguilar\\SolrizeFinale2try\\DAL\\DAL.csproj",
+        "packagesPath": "C:\\Users\\carra\\.nuget\\packages\\",
+        "outputPath": "A:\\DAM\\DEINT\\SolarizeDEINT\\MeloAguilar\\SolrizeFinale2try\\DAL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "A:\\Programas\\Visual Studio Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\caguilar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\carra\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -33,8 +33,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\caguilar\\Desktop\\Interfaces\\SolrizeFinale2try\\Entities\\Entities.csproj": {
-                "projectPath": "C:\\Users\\caguilar\\Desktop\\Interfaces\\SolrizeFinale2try\\Entities\\Entities.csproj"
+              "A:\\DAM\\DEINT\\SolarizeDEINT\\MeloAguilar\\SolrizeFinale2try\\Entities\\Entities.csproj": {
+                "projectPath": "A:\\DAM\\DEINT\\SolarizeDEINT\\MeloAguilar\\SolrizeFinale2try\\Entities\\Entities.csproj"
               }
             }
           }
@@ -64,24 +64,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\caguilar\\Desktop\\Interfaces\\SolrizeFinale2try\\Entities\\Entities.csproj": {
+    "A:\\DAM\\DEINT\\SolarizeDEINT\\MeloAguilar\\SolrizeFinale2try\\Entities\\Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\caguilar\\Desktop\\Interfaces\\SolrizeFinale2try\\Entities\\Entities.csproj",
+        "projectUniqueName": "A:\\DAM\\DEINT\\SolarizeDEINT\\MeloAguilar\\SolrizeFinale2try\\Entities\\Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "C:\\Users\\caguilar\\Desktop\\Interfaces\\SolrizeFinale2try\\Entities\\Entities.csproj",
-        "packagesPath": "C:\\Users\\caguilar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\caguilar\\Desktop\\Interfaces\\SolrizeFinale2try\\Entities\\obj\\",
+        "projectPath": "A:\\DAM\\DEINT\\SolarizeDEINT\\MeloAguilar\\SolrizeFinale2try\\Entities\\Entities.csproj",
+        "packagesPath": "C:\\Users\\carra\\.nuget\\packages\\",
+        "outputPath": "A:\\DAM\\DEINT\\SolarizeDEINT\\MeloAguilar\\SolrizeFinale2try\\Entities\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "A:\\Programas\\Visual Studio Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\caguilar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\carra\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -124,7 +124,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }

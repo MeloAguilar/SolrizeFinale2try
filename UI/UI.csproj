@@ -49,7 +49,11 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Images\details_icon.png" />
+	  <None Remove="Resources\Images\gal_icon.png" />
+	  <None Remove="Resources\Images\location_icon.png" />
 	  <None Remove="Resources\Images\logo.png" />
+	  <None Remove="Resources\Images\notes_icon.png" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -66,7 +70,7 @@
 	  <MauiXaml Update="Views\DetallesCita.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\Localizar.xaml">
+	  <MauiXaml Update="Views\Galeria.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\Login.xaml">
@@ -75,6 +79,10 @@
 	  <MauiXaml Update="Views\Notas.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Models\" />
 	</ItemGroup>
 
 </Project>

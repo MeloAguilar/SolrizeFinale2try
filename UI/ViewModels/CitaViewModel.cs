@@ -5,11 +5,13 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
 
 namespace UI.ViewModels
 {
 	public class CitaViewModel
 	{
+		public ICommand usarMapa { get; set; }
 		private DateTime fechaHoraCita;
 
 		public DateTime FechaHoraCita { get; set; }
@@ -53,7 +55,7 @@ namespace UI.ViewModels
 
 		public string NombreCompletoVM => $"{Cliente.Nombre} {Cliente.Apellidos}";
 		public clsPersona Cliente { get; set; }
-		public string Observaciones { get; set; }
+		public List<string> Observaciones { get; set; }
 		public bool Apto { get; set; }
 		public List<string> Imagenes { get; set; }
 
@@ -63,18 +65,17 @@ namespace UI.ViewModels
 			this.TelefonoVM = _cliente.Telefono;
 			this.ApellidosVM = _cliente.Apellidos;
 			this.NombreVM = _cliente.Nombre;
-			this.Observaciones = "";
+			this.Observaciones = new List<string>();
 			this.Imagenes = new List<string>();
 			this.Apto = false;
 			this.FechaHoraCita = _fechaHora;
-
+			usarMapa = new Command(() => Map.Default.OpenAsync(new Location(37.45513718547035, -122.11575688327474), new MapLaunchOptions { NavigationMode = NavigationMode.Driving }));
 		}
 
 		public CitaViewModel()
 		{
-
 			this.Cliente = new clsPersona();
-			this.Observaciones = "";
+			this.Observaciones = new List<string>();
 			this.Imagenes = new List<string>();
 			this.Apto = false;
 			this.FechaHoraCita = (DateTime.Now.AddHours(new Random(4).NextDouble()));
