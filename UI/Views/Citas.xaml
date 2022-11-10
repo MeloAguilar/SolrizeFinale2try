@@ -2,7 +2,8 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="UI.Views.Citas"
-             Title="Citas">
+             Title="Citas"
+             BackgroundColor="#3A5F45">
     <ScrollView>
         <StackLayout
             Spacing="40">
@@ -11,33 +12,34 @@
                 SelectionMode="Single"
                 SelectionChanged="ClientesListView_SelectionChanged"
                 x:Name="ClientesListView"
+                InputTransparent="False"
                 ItemsSource="{Binding ivm}"
                 ItemSizingStrategy="MeasureAllItems">
                 <CollectionView.ItemsLayout>
                     <GridItemsLayout 
-                        Orientation="Vertical"/>
+                        Orientation="Vertical"
+                        Span="2"/>
 
                 </CollectionView.ItemsLayout>
-                <CollectionView.HeaderTemplate>
-                    <DataTemplate>
-                        <StackLayout>
-
-                        </StackLayout>
-                    </DataTemplate>
-                </CollectionView.HeaderTemplate>
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
                         <Border
-                            Margin="30,1,30,1"
                             StrokeShape="RoundRectangle 30,30,30,30"
                             StrokeThickness="3"
                             Background="Transparent"
                             BackgroundColor="Transparent">
+                            <Border.Shadow >
+                                <Shadow 
+                                    Brush="Black"
+                                    Offset="3,6"
+                                    Radius="13"
+                                    Opacity="0.8"/>
+                            </Border.Shadow>
                             <Grid 
                                 VerticalOptions="Center"
-                                Padding="40" 
-                                RowSpacing="1" 
-                                BackgroundColor="RosyBrown">
+                                Padding="30" 
+                                RowSpacing="10" 
+                                BackgroundColor="#EFF1ED">
 
                                 <Grid.RowDefinitions>
                                     <RowDefinition 
@@ -50,20 +52,37 @@
                                         Height="Auto"/>
                                 </Grid.RowDefinitions>
 
-                                <Label
-                                    HorizontalOptions="Center"
-                                    FontSize="Large"
-                                    Text="{Binding FechaHoraCita, StringFormat='{0:dd-M     HH:MM}'}">
+                                <VerticalStackLayout>
+                                    <Label
+                                        TextColor="Black"
+                                        HorizontalOptions="Start"
+                                        VerticalOptions="Start"
+                                        FontAttributes="Bold"
+                                        FontSize="20"
+                                        Text="{Binding FechaHoraCita, StringFormat='{0:dd MMMM}'}">
+                                        
+                                    </Label>
 
-                                </Label>
+                                    <Label
+                                        TextColor="Black"
+                                        HorizontalOptions="Center"
+                                        VerticalOptions="End"
+                                        FontSize="20"
+                                        FontAttributes="Bold"
+                                        Text="{Binding FechaHoraCita, StringFormat='{0:HH:MM}'}">
 
+                                    </Label>
+
+                                </VerticalStackLayout>
 
                                 <Label  
+                                        TextColor="DimGrey"
                                     HorizontalOptions="Center"
                                     Grid.Row="2"
                                     Text="{Binding NombreCompletoVM}" />
-                                
-                                <Label 
+
+                                <Label
+                                        TextColor="DimGray" 
                                     HorizontalOptions="Center"
                                     Grid.Row="3"
                                     Text="{Binding TelefonoVM}" />

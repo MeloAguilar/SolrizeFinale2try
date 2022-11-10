@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="UI.Views.Galeria"
              Title="Galeria"
+             BackgroundColor="#3A5F45"
              x:Name="galeriaPag">
     <Grid>
         <Grid.RowDefinitions>
@@ -13,7 +14,15 @@
        <VerticalStackLayout>
         
             <Border
+                BackgroundColor="#EFF1ED"
        StrokeShape="RoundRectangle 20,20,20,20">
+                    <Border.Shadow >
+                        <Shadow 
+                                    Brush="Black"
+                                    Offset="3,6"
+                                    Radius="13"
+                                    Opacity="0.8"/>
+                    </Border.Shadow>
                     <FlexLayout
             Wrap="Wrap"
             JustifyContent="SpaceAround"
@@ -26,6 +35,7 @@
 </VerticalStackLayout>
     </ScrollView>
         <Button 
+            BackgroundColor="Black"
             Text="Tomar Foto" 
             Margin="0,0,20,30"
             VerticalOptions="End"

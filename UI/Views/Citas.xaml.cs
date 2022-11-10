@@ -29,8 +29,9 @@ public partial class Citas : ContentPage
 		int minutos = 0;
 		foreach (var item in list)
 		{
-			cvm.Add(new CitaViewModel(new clsPersona(item.Nombre, item.Apellidos, item.Direccion, item.Telefono), DateTime.Now.AddMinutes(minutos)));
 			minutos+=45;
+			cvm.Add(new CitaViewModel(new clsPersona(item.Nombre, item.Apellidos, item.Direccion, item.Telefono), DateTime.Now.AddMinutes(minutos)));
+			
 		}
 
 

@@ -22,9 +22,10 @@
              BackgroundColor="#C7C8CA">
             
             <Entry
+                TextColor="Black"
                 VerticalOptions="Center"
                 x:Name="txtUser"
-                PlaceholderColor="Black"
+                PlaceholderColor="DimGrey"
                 Placeholder="Usuario"/>
             
         </Border>
@@ -39,9 +40,10 @@
             Margin="0,0,0,100">
             
             <Entry
+                TextColor="Black"
                 Placeholder="Contraseña"
                 
-                PlaceholderColor="Black"
+                PlaceholderColor="DimGrey"
                 x:Name="txtPass"
                 IsPassword="True"/>
             
@@ -51,16 +53,20 @@
         <VerticalStackLayout
             Margin="0,30,0,0"
             VerticalOptions="Center"
-            HorizontalOptions="Center"
+            HorizontalOptions="Fill"
             >
             
             <Button
-                TextColor="DarkRed"
+                Margin="70,0,70,0"
+                Padding="10"
+                Scale="1"
+                TextColor="White"
                 Text="Log in"
+                FontSize="18"
                 FontAttributes="Bold"
                 x:Name="btnInicio"
                 Clicked="btnInicio_Clicked"
-                BackgroundColor="RosyBrown">
+                BackgroundColor="Black">
 
             </Button>
         </VerticalStackLayout>

@@ -32,7 +32,7 @@ public partial class Notas : ContentPage
 		
 
 
-		bool answer = await DisplayAlert("Guardar Imagen", "¿Estás seguro de que quieres incluir esta imagen en el informe?", "Si", "No");
+		bool answer = await DisplayAlert("Guardar Nota", "¿Estás seguro de que quieres incluir esta imagen en el informe?", "Si", "No");
 		if (answer)
 		{
 			//Declaro la cantidad de notas para poder enumerarlas 
@@ -59,12 +59,18 @@ public partial class Notas : ContentPage
 			};
 			//Añado los labels al flexLayout
 
+
+			//Genero el boton que servirá para eliminar la nota si se precisa
 			var btn = new Button();
 			btn.Text = "-";
+			btn.Background = Colors.Black;
+			btn.TextColor = Color.FromArgb("#EFF1ED");
+			btn.WidthRequest=50;
 			btn.FontAttributes = FontAttributes.Bold;
 			btn.FontSize=22;
+
 			btn.Clicked += btnQuitarNota_Clicked;
-			
+			flex.Add(btn);
 
 			//Declaro el borde para dar estética
 			var border = new Border
@@ -72,7 +78,7 @@ public partial class Notas : ContentPage
 				Content = flex,
 				Padding = 30,
 				StrokeShape = rectangulo,
-				BackgroundColor = Colors.DimGray,
+				BackgroundColor = Color.FromArgb("#EFF1ED"),
 				MaximumHeightRequest = 200
 				
 			};
@@ -95,6 +101,9 @@ public partial class Notas : ContentPage
 	private async void btnQuitarNota_Clicked(object sender, EventArgs e)
 	{
 
+		//Boton que deberia quitar las notas de la vista
+		//Deberia recoger el boton que la envia y eliminar de la vista la
+		//nota necesaria
 	}
 
 }

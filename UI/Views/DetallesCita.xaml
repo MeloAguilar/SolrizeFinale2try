@@ -5,104 +5,128 @@
              Title="Detalles"
              IconImageSource="dotnet_bot.svg"
              x:Name="Detalles"
-             BackgroundColor="DimGrey">
+             BackgroundColor="#3A5F45">
     <Border
         Margin="7"
-        BackgroundColor="RosyBrown"
+        BackgroundColor="#EFF1ED"
         StrokeShape="RoundRectangle 40,40,40,40">
     <VerticalStackLayout
         HorizontalOptions="Fill"
         VerticalOptions="Center">
         
         
-        <HorizontalStackLayout
+        <VerticalStackLayout
             HorizontalOptions="Center"
-            Margin="0,20,0,20"
+            Spacing="15"
             Padding="0,0,0,0">
             <Label
-                FontSize="50"
+                TextColor="Black"
+                FontSize="40"
                 FontAttributes="Bold"
-                Text="{Binding FechaHoraCita, StringFormat='{0:yy-M}'}"
-                Padding="0,0,30,50"
+                Text="{Binding FechaHoraCita, StringFormat='{0:MMMM dd}'}"
                 HorizontalOptions="Start"
                 x:Name="lblFecha"
             />
         <Label
-            FontSize="50"
-            Text="{Binding FechaHoraCita, StringFormat='{0:HH:MM}'}"
-            Padding="30,0,0,50"
+            TextColor="Black"
+            FontSize="40"
+            Text="{Binding FechaHoraCita, StringFormat='{0:HH:M}'}"
             FontAttributes="Bold"
-            HorizontalOptions="End"
+
+            HorizontalOptions="Center"
             VerticalOptions="Start"
-            x:Name="lblHora"/>
+            x:Name="lblHora"
+            />
              
-        </HorizontalStackLayout>
+        </VerticalStackLayout>
 
 
 
             <Border
-                StrokeShape="RoundRectangle 40,40,40,40"
+                StrokeShape="RoundRectangle 60,60,60,60"
                 VerticalOptions="Center"
-                Margin="10"
-                BackgroundColor="#D4C95B"
+                Margin="15,50,15,0"
+                BackgroundColor="#BFD7B5"
                 MinimumWidthRequest="300"
                 HorizontalOptions="Center">
                 <VerticalStackLayout>
-            <Label
-                Padding="0,30,0,30"
-                HorizontalOptions="Center"
-                VerticalOptions="Center"
-                FontSize="30"
-                Text="{Binding NombreCompletoVM}"
-                x:Name="lblNombre"/>
-                    
-                   <Label
-                FontSize="30"
-                Padding="0,023,0,30"
-                HorizontalOptions="Center"
-                Text="{Binding TelefonoVM}"
-                x:Name="lblTelefono"/>    
-                    
-            <Label
-                Padding="30,0,30,50"
-                FontSize="20"
-                HorizontalOptions="Center"
-                Text="{Binding DireccionVM}"
-                x:Name="lblDireccion"/>
+                    <Label
+                        TextColor="Black"
+                        Padding="0,30,0,30"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        FontSize="30"
+                        FontAttributes="Bold"
+                        Text="{Binding NombreCompletoVM}"
+                        x:Name="lblNombre"/>
+
+                    <Label
+                        TextColor="Black"
+                        FontSize="23"
+                        Padding="0,2,0,10"
+                        HorizontalOptions="Center"
+                        Text="{Binding TelefonoVM}"
+                        x:Name="lblTelefono"/>
+
+                    <Label
+                         TextColor="DimGrey"
+                        Padding="30,0,30,50"
+                        FontSize="15"
+                         HorizontalOptions="Center"
+                        Text="{Binding DireccionVM}"
+                        x:Name="lblDireccion"/>
 
          
-
-
-
-
                 </VerticalStackLayout>
             </Border>
             <HorizontalStackLayout
-                HorizontalOptions="Center"
-                Spacing="10"
+                HorizontalOptions="Fill"
+                Spacing="120"
                 Margin="0,40,0,0"
-                Padding="20,0,40,40">
-                <Border
-                    BackgroundColor="Transparent"
-                    StrokeShape="RoundRectangle 15,15,15,15"
-                    Margin="0,0,65,0">
-                <ImageButton
-                HorizontalOptions="End"
-                HeightRequest="60"
-                WidthRequest="60"
-                Command="{Binding usarMapa}"
-                Source="location_icon.png"
-                />
-                </Border>
-                <Label Text="Viabilidad"
-                       FontAttributes="Bold"
-                       FontSize="18"
-                       VerticalOptions="Center"/>
-                <CheckBox 
-                    Scale="1.5"
-                       x:Name="ckApto"
-                    Color="#D4C95B"
-                       IsChecked="{Binding Apto}"/>
+                Padding="40,0,0,10">
+                <VerticalStackLayout>
+                    <ImageButton
+                        HorizontalOptions="Start"
+                    HeightRequest="60"
+                    WidthRequest="60"
+                    Command="{Binding usarMapa}"
+                    Source="location_icon.png"
+                >
+                        
+                        <ImageButton.Shadow>
+                            <Shadow  
+                                    Brush="Black"
+                                    Offset="3,6"
+                                    Radius="13"
+                                    Opacity="0.8"/>
+                        </ImageButton.Shadow>
+                    </ImageButton>
+                    <Label
+                        TextColor="DimGrey" 
+                        FontSize="13"
+                        FontAttributes="Bold"
+                        Margin="8,0,0,0" 
+                        Text="Mapa"
+                           />
+                </VerticalStackLayout>
+                <HorizontalStackLayout
+                    Spacing="5"
+                    VerticalOptions="Center"
+                    HorizontalOptions="End">
+                    <Label 
+                         TextColor="DimGrey"
+                       HorizontalOptions="End"
+                        Text="Viabilidad"
+                        FontAttributes="Bold"
+                        FontSize="13"
+                         VerticalOptions="Center"/>
+                    <CheckBox 
+                        HorizontalOptions="End"
+                        Scale="1.5"
+                        x:Name="ckApto"
+                        Color="#3A5F45"
+                        IsChecked="{Binding Apto}"/>
+                </HorizontalStackLayout>
         </HorizontalStackLayout>
           
         </VerticalStackLayout>

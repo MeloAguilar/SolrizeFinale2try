@@ -1427,7 +1427,6 @@ A:\DAM\DEINT\SolarizeDEINT\MeloAguilar\SolrizeFinale2try\UI\obj\Debug\net6.0-and
 A:\DAM\DEINT\SolarizeDEINT\MeloAguilar\SolrizeFinale2try\UI\obj\Debug\net6.0-android\android\assets\Xamarin.Kotlin.StdLib.Jdk8.dll
 A:\DAM\DEINT\SolarizeDEINT\MeloAguilar\SolrizeFinale2try\UI\obj\Debug\net6.0-android\android\assets\Xamarin.KotlinX.Coroutines.Android.dll
 A:\DAM\DEINT\SolarizeDEINT\MeloAguilar\SolrizeFinale2try\UI\obj\Debug\net6.0-android\android\assets\Xamarin.KotlinX.Coroutines.Core.Jvm.dll
-A:\DAM\DEINT\SolarizeDEINT\MeloAguilar\SolrizeFinale2try\UI\obj\Debug\net6.0-android\android\typemaps.x86_64.s
 A:\DAM\DEINT\SolarizeDEINT\MeloAguilar\SolrizeFinale2try\UI\obj\Debug\net6.0-android\android\typemaps.shared.inc
 A:\DAM\DEINT\SolarizeDEINT\MeloAguilar\SolrizeFinale2try\UI\obj\Debug\net6.0-android\AndroidManifest.xml
 A:\DAM\DEINT\SolarizeDEINT\MeloAguilar\SolrizeFinale2try\UI\obj\Debug\net6.0-android\android\AndroidManifest.xml
@@ -1437,7 +1436,6 @@ A:\DAM\DEINT\SolarizeDEINT\MeloAguilar\SolrizeFinale2try\UI\obj\Debug\net6.0-and
 A:\DAM\DEINT\SolarizeDEINT\MeloAguilar\SolrizeFinale2try\UI\obj\Debug\net6.0-android\android\bin\mono.android.jar
 A:\DAM\DEINT\SolarizeDEINT\MeloAguilar\SolrizeFinale2try\UI\obj\Debug\net6.0-android\static.flag
 A:\DAM\DEINT\SolarizeDEINT\MeloAguilar\SolrizeFinale2try\UI\obj\Debug\net6.0-android\buildid.txt
-A:\DAM\DEINT\SolarizeDEINT\MeloAguilar\SolrizeFinale2try\UI\obj\Debug\net6.0-android\android\environment.x86_64.s
 A:\DAM\DEINT\SolarizeDEINT\MeloAguilar\SolrizeFinale2try\UI\obj\Debug\net6.0-android\android\src\androidx\activity\ktx\R.java
 A:\DAM\DEINT\SolarizeDEINT\MeloAguilar\SolrizeFinale2try\UI\obj\Debug\net6.0-android\android\src\androidx\activity\R.java
 A:\DAM\DEINT\SolarizeDEINT\MeloAguilar\SolrizeFinale2try\UI\obj\Debug\net6.0-android\android\src\androidx\annotation\experimental\R.java
@@ -1908,11 +1906,6 @@ A:\DAM\DEINT\SolarizeDEINT\MeloAguilar\SolrizeFinale2try\UI\obj\Debug\net6.0-and
 A:\DAM\DEINT\SolarizeDEINT\MeloAguilar\SolrizeFinale2try\UI\obj\Debug\net6.0-android\android\src\mono\MonoPackageManager_Resources.java
 A:\DAM\DEINT\SolarizeDEINT\MeloAguilar\SolrizeFinale2try\UI\obj\Debug\net6.0-android\android\bin\packaged_resources
 A:\DAM\DEINT\SolarizeDEINT\MeloAguilar\SolrizeFinale2try\UI\obj\Debug\net6.0-android\android\src\com\companyname\ui\R.java
-A:\DAM\DEINT\SolarizeDEINT\MeloAguilar\SolrizeFinale2try\UI\obj\Debug\net6.0-android\android\compressed_assemblies.x86_64.s
-A:\DAM\DEINT\SolarizeDEINT\MeloAguilar\SolrizeFinale2try\UI\obj\Debug\net6.0-android\android\typemaps.x86_64.o
-A:\DAM\DEINT\SolarizeDEINT\MeloAguilar\SolrizeFinale2try\UI\obj\Debug\net6.0-android\android\environment.x86_64.o
-A:\DAM\DEINT\SolarizeDEINT\MeloAguilar\SolrizeFinale2try\UI\obj\Debug\net6.0-android\android\compressed_assemblies.x86_64.o
-A:\DAM\DEINT\SolarizeDEINT\MeloAguilar\SolrizeFinale2try\UI\obj\Debug\net6.0-android\app_shared_libraries\x86_64\libxamarin-app.so
 A:\DAM\DEINT\SolarizeDEINT\MeloAguilar\SolrizeFinale2try\UI\obj\Debug\net6.0-android\android\bin\classes.dex
 A:\DAM\DEINT\SolarizeDEINT\MeloAguilar\SolrizeFinale2try\UI\obj\Debug\net6.0-android\android\bin\classes2.dex
 A:\DAM\DEINT\SolarizeDEINT\MeloAguilar\SolrizeFinale2try\UI\obj\Debug\net6.0-android\stamp\_CleanIntermediateIfNeeded.stamp
@@ -1934,3 +1927,10 @@ A:\DAM\DEINT\SolarizeDEINT\MeloAguilar\SolrizeFinale2try\UI\obj\Debug\net6.0-and
 A:\DAM\DEINT\SolarizeDEINT\MeloAguilar\SolrizeFinale2try\UI\obj\Debug\net6.0-android\resizetizer\r\drawable\location_icon.png
 A:\DAM\DEINT\SolarizeDEINT\MeloAguilar\SolrizeFinale2try\UI\obj\Debug\net6.0-android\resizetizer\r\drawable\notes_icon.png
 A:\DAM\DEINT\SolarizeDEINT\MeloAguilar\SolrizeFinale2try\UI\obj\Debug\net6.0-android\resizetizer\r\drawable\gal_icon.png
+A:\DAM\DEINT\SolarizeDEINT\MeloAguilar\SolrizeFinale2try\UI\obj\Debug\net6.0-android\android\typemaps.arm64-v8a.s
+A:\DAM\DEINT\SolarizeDEINT\MeloAguilar\SolrizeFinale2try\UI\obj\Debug\net6.0-android\android\environment.arm64-v8a.s
+A:\DAM\DEINT\SolarizeDEINT\MeloAguilar\SolrizeFinale2try\UI\obj\Debug\net6.0-android\android\compressed_assemblies.arm64-v8a.s
+A:\DAM\DEINT\SolarizeDEINT\MeloAguilar\SolrizeFinale2try\UI\obj\Debug\net6.0-android\android\typemaps.arm64-v8a.o
+A:\DAM\DEINT\SolarizeDEINT\MeloAguilar\SolrizeFinale2try\UI\obj\Debug\net6.0-android\android\environment.arm64-v8a.o
+A:\DAM\DEINT\SolarizeDEINT\MeloAguilar\SolrizeFinale2try\UI\obj\Debug\net6.0-android\android\compressed_assemblies.arm64-v8a.o
+A:\DAM\DEINT\SolarizeDEINT\MeloAguilar\SolrizeFinale2try\UI\obj\Debug\net6.0-android\app_shared_libraries\arm64-v8a\libxamarin-app.so

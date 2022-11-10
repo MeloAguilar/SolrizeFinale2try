@@ -109,6 +109,8 @@ public partial class Galeria : ContentPage
 				//Preguntamos si se quiere añadir la foto
 				bool answer = await DisplayAlert("Guardar Imagen", "¿Estás seguro de que quieres incluir esta imagen en el informe?", "Si", "No");
 
+
+
 				if (answer)
 				{
 					//Añadimos la foto, tanto al container como a nuestro viewModel

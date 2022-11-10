@@ -2,7 +2,8 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="UI.Views.Notas"
-             Title="Notas">
+             Title="Notas"
+             BackgroundColor="#3A5F45">
     <RefreshView 
         x:Name="rv"
         IsRefreshing="{Binding IsRefreshing}"
@@ -23,11 +24,13 @@
             <Button
             HorizontalOptions="End"
             VerticalOptions="End"
-            Margin="0,0,50,50"
+            Margin="0,0,30,50"
             Text="+"
+                Scale="1.4"
             FontAttributes="Bold"
-            FontSize="22"
-            BackgroundColor="RosyBrown"
+            TextColor="White"
+            FontSize="20"
+            BackgroundColor="Black"
             WidthRequest="40"
             HeightRequest="50"
             FlexLayout.Basis="Auto"
