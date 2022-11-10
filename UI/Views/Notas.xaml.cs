@@ -1,7 +1,10 @@
+using Android.Graphics;
 using Android.Graphics.Drawables.Shapes;
+using Java.Util;
 using Microsoft.Maui.Controls.Shapes;
 using Microsoft.Maui.HotReload;
 using UI.ViewModels;
+using Color = Microsoft.Maui.Graphics.Color;
 
 namespace UI.Views;
 
@@ -16,10 +19,17 @@ public partial class Notas : ContentPage
 		citaVM = vm;
 		ntrNota = new Entry();
 
-
-		ntrNota.Placeholder = "Pipopipo pipo";
-
-		containerNotas.Add(ntrNota);
+		var bordeEntry = new Border();
+		ntrNota.Placeholder = "Escribe aquí...";
+		var rectangulo = new RoundRectangle();
+		var radioRectangulo = new CornerRadius(40, 40, 40, 40);
+		rectangulo.CornerRadius=radioRectangulo;
+		bordeEntry.Padding=9;
+		bordeEntry.StrokeShape = rectangulo;
+		bordeEntry.Content = ntrNota;
+		bordeEntry.BackgroundColor = Colors.Transparent;
+		containerNotas.Add(bordeEntry);
+		ntrNota.Text = "nop"; 
 	}
 
 
@@ -47,7 +57,7 @@ public partial class Notas : ContentPage
 			var lblNota = new Label();
 			
 			//Establezco las propiedades del label que contendrá el titulo de la nota
-			lblTitulo.Text = "Nota " + cantidadNotas;
+			lblTitulo.Text = "Nota " + ++cantidadNotas;
 			lblTitulo.FontSize=15;
 			lblTitulo.FontAttributes = FontAttributes.Bold;
 
@@ -72,6 +82,10 @@ public partial class Notas : ContentPage
 			btn.Clicked += btnQuitarNota_Clicked;
 			flex.Add(btn);
 
+			var scroll = new ScrollView()
+			{
+				Content = flex
+			};
 			//Declaro el borde para dar estética
 			var border = new Border
 			{
@@ -82,14 +96,13 @@ public partial class Notas : ContentPage
 				MaximumHeightRequest = 200
 				
 			};
+			lblNota.Text = ntrNota.Text;
 			flex.Children.Add(lblTitulo);
 			flex.Children.Add(lblNota);
 			citaVM.Observaciones.Add(ntrNota.Text);
 			containerNotas.Children.Add(border);
 			
-			//Añado otra nota
-			ntrNota = new Entry();
-			containerNotas.Children.Add(ntrNota);
+			
 			
 
 

@@ -36,5 +36,14 @@
             <param name="sender"></param>
             <param name="e"></param>
         </member>
+        <member name="M:UI.Views.Galeria.OnImageClicked(System.Object,System.EventArgs)">
+            <summary>
+            Método que se llama cada vez que se presiona una imagen.
+            Este preguntará al usuario si desea introducir esa imagen en
+            el informe
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
     </members>
 </doc>

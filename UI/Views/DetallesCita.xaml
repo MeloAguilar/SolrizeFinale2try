@@ -69,10 +69,10 @@
                         x:Name="lblTelefono"/>
 
                     <Label
-                         TextColor="DimGrey"
+                        TextColor="DimGrey"
                         Padding="30,0,30,50"
                         FontSize="15"
-                         HorizontalOptions="Center"
+                        HorizontalOptions="Center"
                         Text="{Binding DireccionVM}"
                         x:Name="lblDireccion"/>
 
@@ -80,25 +80,25 @@
                 </VerticalStackLayout>
             </Border>
             <HorizontalStackLayout
+                x:Name="layoutBajoDetalles"
                 HorizontalOptions="Fill"
-                Spacing="120"
+                Spacing="60"
                 Margin="0,40,0,0"
                 Padding="40,0,0,10">
                 <VerticalStackLayout>
                     <ImageButton
                         HorizontalOptions="Start"
-                    HeightRequest="60"
-                    WidthRequest="60"
-                    Command="{Binding usarMapa}"
-                    Source="location_icon.png"
-                >
+                        HeightRequest="60"
+                        WidthRequest="60"
+                        Command="{Binding usarMapa}"
+                        Source="location_icon.png">
                         
                         <ImageButton.Shadow>
                             <Shadow  
-                                    Brush="Black"
-                                    Offset="3,6"
-                                    Radius="13"
-                                    Opacity="0.8"/>
+                                Brush="Black"
+                                Offset="3,6"
+                                Radius="13"
+                                Opacity="0.8"/>
                         </ImageButton.Shadow>
                     </ImageButton>
                     <Label
@@ -109,16 +109,21 @@
                         Text="Mapa"
                            />
                 </VerticalStackLayout>
+                <ImageButton
+                    x:Name="imgArrayFotos"
+                    Clicked="imgArrayFotos_Clicked">
+                    
+                </ImageButton>
                 <HorizontalStackLayout
                     Spacing="5"
                     VerticalOptions="Center"
                     HorizontalOptions="End">
                     <Label 
                          TextColor="DimGrey"
-                       HorizontalOptions="End"
-                        Text="Viabilidad"
-                        FontAttributes="Bold"
-                        FontSize="13"
+                         HorizontalOptions="End"
+                         Text="Viabilidad"
+                         FontAttributes="Bold"
+                         FontSize="13"
                          VerticalOptions="Center"/>
                     <CheckBox 
                         HorizontalOptions="End"

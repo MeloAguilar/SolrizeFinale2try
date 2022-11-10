@@ -15,4 +15,10 @@ public partial class DetallesCita : ContentPage
 		Detalles.BindingContext = vm;
 
 	}
+
+	private void imgArrayFotos_Clicked(object sender, EventArgs e)
+	{
+		imgArrayFotos.IsVisible =false;
+		//layoutBajoDetalles.Add()
+	}
 }

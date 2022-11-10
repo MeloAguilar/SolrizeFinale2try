@@ -106,13 +106,11 @@ public partial class Galeria : ContentPage
 					WidthRequest = 100
 				};
 
-				//Preguntamos si se quiere añadir la foto
-				bool answer = await DisplayAlert("Guardar Imagen", "¿Estás seguro de que quieres incluir esta imagen en el informe?", "Si", "No");
+				image.Clicked += OnImageClicked;
 
 
 
-				if (answer)
-				{
+			
 					//Añadimos la foto, tanto al container como a nuestro viewModel
 					containerPrincipal.Children.Add(image);
 					cita.Imagenes.Add(localFilePath);
@@ -122,7 +120,7 @@ public partial class Galeria : ContentPage
 					using FileStream localFileStream = File.OpenWrite(localFilePath);
 
 					await sourceStream.CopyToAsync(localFileStream);
-				}
+				
 
 			}
 		}
@@ -140,11 +138,21 @@ public partial class Galeria : ContentPage
 		TakePhoto();
 	}
 
+
+	/// <summary>
+	/// Método que se llama cada vez que se presiona una imagen.
+	/// Este preguntará al usuario si desea introducir esa imagen en
+	/// el informe
+	/// </summary>
+	/// <param name="sender"></param>
+	/// <param name="e"></param>
 	async void OnImageClicked(object sender, EventArgs e)
 	{
 		bool answer = await DisplayAlert("Guardar Imagen", "¿Estás seguro de que quieres incluir esta imagen en el informe?", "Si", "No");
 		if (answer)
 		{
+			var s = sender as ImageButton;
+			
 			//No he descubierto como sacar la foto del evento
 			//Aqui debería añadirse la foto a las imagenes del informe
 

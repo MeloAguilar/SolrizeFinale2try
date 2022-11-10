@@ -4,10 +4,7 @@
              x:Class="UI.Views.Notas"
              Title="Notas"
              BackgroundColor="#3A5F45">
-    <RefreshView 
-        x:Name="rv"
-        IsRefreshing="{Binding IsRefreshing}"
-             Command="{Binding RefreshCommand}">
+
         <Grid>
 
             <Grid.RowDefinitions>
@@ -35,7 +32,6 @@
             HeightRequest="50"
             FlexLayout.Basis="Auto"
             Clicked="btnNota_Clicked"/>
-            
+
         </Grid>
-    </RefreshView>
 </ContentPage>
